@@ -47,7 +47,7 @@
 1.  **克隆或下载仓库**
     ```bash
     git clone [https://github.com/Ywocp/ScriptRepackerGUI.git](https://github.com/Ywocp/ScriptRepackerGUI.git)
-    cd ScriptRepacker-GUI
+    cd ScriptRepackerGUI
     ```
 
 2.  **安装依赖库**
