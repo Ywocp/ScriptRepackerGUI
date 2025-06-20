@@ -1,0 +1,22 @@
+# Python virtual environment
+.venv/
+venv/
+
+# PyCharm specific files
+.idea/
+
+# Build artifacts from PyInstaller
+build/
+dist/
+*.spec
+
+# User-generated folders
+input/
+output/
+
+# External binaries that should not be in the repository
+ScriptRepacker.exe
+
+# Python cache
+__pycache__/
+*.pyc
