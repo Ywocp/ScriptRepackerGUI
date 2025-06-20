@@ -72,7 +72,7 @@
     pip install pyinstaller
     ```
 
-2.  **执行打包命令** (不含 UPX):
+2.  **执行打包命令** :
     由于 `ScriptRepacker.exe` 已在项目文件夹中，`--add-data` 参数会自动找到它。
     ```bash
     pyinstaller --onefile --windowed --add-data "ScriptRepacker.exe;." -n "ScriptRepackerGUI" --exclude-module "PySide6.QtNetwork" --exclude-module "PySide6.QtWebEngineCore" --exclude-module "PySide6.QtMultimedia" --exclude-module "PySide6.QtSql" --exclude-module "PySide6.QtTest" gui_app.py
