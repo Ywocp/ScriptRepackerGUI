@@ -15,7 +15,6 @@ input/
 output/
 
 # External binaries that should not be in the repository
-ScriptRepacker.exe
 
 # Python cache
 __pycache__/
