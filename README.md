@@ -20,14 +20,19 @@
 
 ## 📖 使用说明 (for End-Users)
 
-1.  从本项目的 [Releases 页面](https://github.com/Ywocp/ScriptRepackerGUI/releases) 下载最新的 `.zip` 压缩包。
-2.  解压 `.zip` 文件，得到 `ScriptRepackerGUI.exe`。
-3.  **【重要】** 从 [此处](https://github.com/xmoeproject/SiglusExtract/blob/master/tools/ScriptRepacker.exe) 下载 `ScriptRepacker.exe` 核心程序，并将其放置在与 `ScriptRepackerGUI.exe` **相同的文件夹**中。
-4.  在同一目录下，创建一个名为 `input` 的文件夹，并将所有待处理的 `.ss` 和 `.ss.txt` 文件放入其中。
-5.  双击运行 `ScriptRepackerGUI.exe`。
-6.  在程序界面中，通过点击按钮或拖拽的方式，选择您创建的 `input` 文件夹。
-7.  点击“开始处理”按钮，等待处理完成。
-8.  处理好的文件会出现在自动创建的 `..._output` 文件夹中。
+1.  从本项目的 [Releases 页面](https://github.com/Ywocp/ScriptRepackerGUI/releases)下载最新的 `.zip` 压缩包并解压。压缩包中已包含主程序 `ScriptRepackerGUI.exe` 和所需的核心处理工具。
+
+2.  将您所有需要处理的 `.ss` 和 `.ss.txt` 文件整理到一个文件夹中（此文件夹可任意命名，例如 `MySourceFiles`）。
+
+3.  双击运行 `ScriptRepackerGUI.exe`。
+
+4.  在程序主窗口，通过以下任一方式指定您的源文件夹：
+    * **点击按钮**：点击“点击选择文件夹”按钮，在弹出的窗口中选择您在第2步中准备的文件夹。
+    * **拖拽操作**：直接将您在第2步中准备的文件夹从文件管理器中拖拽到程序窗口的任意位置。
+
+5.  确认路径无误后，点击“开始处理”按钮。
+
+6.  处理完成后，在您的源文件夹旁边会自动生成一个带有 `_output` 后缀的新文件夹（例如，如果您的源文件夹是 `MySourceFiles`，则输出文件夹为 `MySourceFiles_output`），所有处理好的最终文件都存放在里面。
 
 ## 🛠️ 从源码构建 (Building from Source)
 
@@ -62,7 +67,7 @@
     pip install pyinstaller
     ```
 
-2.  **执行打包命令** (不含 UPX):
+2.  **执行打包命令** :
     ```bash
     pyinstaller --onefile --windowed --add-data "ScriptRepacker.exe;." -n "ScriptRepackerGUI" --exclude-module "PySide6.QtNetwork" --exclude-module "PySide6.QtWebEngineCore" --exclude-module "PySide6.QtMultimedia" --exclude-module "PySide6.QtSql" --exclude-module "PySide6.QtTest" gui_app.py
     ```
