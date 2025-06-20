@@ -1,6 +1,6 @@
 # ScriptRepacker GUI
 
-一个为  [xmoeproject/ScriptRepacker](https://github.com/xmoeproject/SiglusExtract/blob/master/tools/ScriptRepacker.exe)  提供图形化操作界面的高效前端应用。本程序通过现代化的GUI，简化了对 `.ss` 及 `.ss.txt` 文件对的批量处理流程。
+一个为  [xmoezzz/ScriptRepacker](https://github.com/xmoeproject/SiglusExtract/blob/master/tools/ScriptRepacker.exe)  提供图形化操作界面的高效前端应用。本程序通过现代化的GUI，简化了对 `.ss` 及 `.ss.txt` 文件对的批量处理流程。
 
 ![Python Version](https://img.shields.io/badge/python-3.9+-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
