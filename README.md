@@ -1,6 +1,6 @@
 # ScriptRepacker GUI
 
-一个为  [xmoezzz/ScriptRepacker](https://github.com/xmoeproject/SiglusExtract/blob/master/tools/ScriptRepacker.exe)  提供图形化操作界面的高效前端应用。本程序通过现代化的GUI，简化了对 `.ss` 及 `.ss.txt` 文件对的批量处理流程。
+一个为  [xmoezzz/ScriptRepacker](https://github.com/xmoeproject/SiglusExtract/blob/master/tools/ScriptRepacker.exe)  提供图形化操作界面的前端。本程序通过现代化的GUI，简化了对 `.ss` 及 `.ss.txt` 文件对的批量处理流程。
 
 ![Python Version](https://img.shields.io/badge/python-3.9+-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
@@ -22,9 +22,9 @@
 
 1.  从本项目的 [Releases 页面](https://github.com/Ywocp/ScriptRepackerGUI/releases)下载最新的 `ScriptRepackerGUI.exe` 程序文件。
 
-2.  将您所有需要处理的 `.ss` 和 `.ss.txt` 文件整理到一个文件夹中（此文件夹可任意命名，例如 `MySourceFiles`）。
+2.  将所有需要处理的 `.ss` 和 `.ss.txt` 文件整理到一个文件夹中（此文件夹可任意命名，例如 `MySourceFiles`）。
 
-3.  为了方便管理，建议将下载的 `ScriptRepackerGUI.exe` 和您在第2步中准备的源文件夹（例如 `MySourceFiles`）放在同一个目录下，比如都放在桌面上。
+3.  为方便管理，建议将下载的 `ScriptRepackerGUI.exe` 和第2步中准备的源文件夹（例如 `MySourceFiles`）放在同一个目录下，比如都放在桌面上（随便放也行，不影响文件处理）。
 
 4.  双击运行 `ScriptRepackerGUI.exe`。
 
@@ -34,7 +34,7 @@
 
 6.  确认路径无误后，点击“开始处理”按钮。
 
-7.  处理完成后，在您的源文件夹旁边会自动生成一个带有 `_output` 后缀的新文件夹（例如，如果您的源文件夹是 `MySourceFiles`，则输出文件夹为 `MySourceFiles_output`），所有处理好的最终文件都存放在里面。
+7.  处理完成后，在源文件夹旁边会自动生成一个带有 `_output` 后缀的新文件夹（例如，如果源文件夹是 `MySourceFiles`，则输出文件夹为 `MySourceFiles_output`），所有处理好的最终文件都存放在里面。
 
 ## 🛠️ 从源码构建 (Building from Source)
 
@@ -79,7 +79,7 @@
     ```
 
 3.  **获取成果**:
-    打包成功后，您最终的 `ScriptRepackerGUI.exe` 文件会出现在新生成的 `dist` 文件夹中。
+    打包成功后，最终的 `ScriptRepackerGUI.exe` 文件会出现在新生成的 `dist` 文件夹中。
 
 ## 🙏 致谢 (Acknowledgements)
 
