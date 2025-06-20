@@ -38,16 +38,19 @@
 
 ## 🛠️ 从源码构建 (Building from Source)
 
+本章节面向希望自行修改代码、运行或打包程序的用户。
+
 ### 环境要求
-* Python 3.9 或更高版本
-* **核心依赖**: 本项目的前端界面需要调用 `ScriptRepacker.exe` 才能工作。请从 [xmoeproject/SiglusExtract](https://github.com/xmoeproject/SiglusExtract/blob/master/tools/ScriptRepacker.exe) 下载该工具，并将其放置在项目根目录下。
+
+* Python 3.9 或更高版本。
+* 本项目的核心依赖工具 `ScriptRepacker.exe` 已包含在仓库中，克隆或下载源码后即可使用。
 
 ### 操作步骤
 
 1.  **克隆或下载仓库**
     ```bash
     git clone [https://github.com/Ywocp/ScriptRepackerGUI.git](https://github.com/Ywocp/ScriptRepackerGUI.git)
-    cd ScriptRepackerGUI
+    cd ScriptRepacker-GUI
     ```
 
 2.  **安装依赖库**
@@ -69,11 +72,12 @@
     pip install pyinstaller
     ```
 
-2.  **执行打包命令** :
+2.  **执行打包命令** (不含 UPX):
+    由于 `ScriptRepacker.exe` 已在项目文件夹中，`--add-data` 参数会自动找到它。
     ```bash
     pyinstaller --onefile --windowed --add-data "ScriptRepacker.exe;." -n "ScriptRepackerGUI" --exclude-module "PySide6.QtNetwork" --exclude-module "PySide6.QtWebEngineCore" --exclude-module "PySide6.QtMultimedia" --exclude-module "PySide6.QtSql" --exclude-module "PySide6.QtTest" gui_app.py
     ```
-    
+
 3.  **获取成果**:
     打包成功后，您最终的 `ScriptRepackerGUI.exe` 文件会出现在新生成的 `dist` 文件夹中。
 
